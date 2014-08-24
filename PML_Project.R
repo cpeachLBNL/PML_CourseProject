@@ -4,7 +4,7 @@
 
 library (ggplot2); library(caret); library(randomForest)
 
-setwd("~/Documents/Personal/R/Coursera/PracticalMachineLearning/Course Project")
+setwd("~/Documents/Personal/R/Coursera/PracticalMachineLearning/PML_CourseProject")
 training <- read.csv("pml-training.csv")
 dim(training)
 names(training)
@@ -70,7 +70,7 @@ for (n in 1:nRuns){
 }
 #Since all predictions are the same, output the first one:
 
-setwd("~/Documents/Personal/R/Coursera/PracticalMachineLearning/Course Project/results")
+setwd("~/Documents/Personal/R/Coursera/PracticalMachineLearning/PML_CourseProject/Results")
 pml_write_files = function(x){
     n = length(x)
     for(i in 1:n){
